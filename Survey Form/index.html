@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the survey below:</p>
+    <form id="survey-form">
+        <label class="title" for="name" id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        
+        <label class="title" for="email" id="email-label">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        
+        <label class="title" for="number" id="number-label">Age:</label>
+        <input type="number" id="number" placeholder="Enter your age" min="13" max="100" required>
+        
+        <label class="title" for="dropdown">Which option best describes your current role?:</label>
+        <select id="dropdown" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="student">Full Time Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="work-study">Work-Study</option>
+        <option value="no">Prefer not to say</option>
+        </select>
+        
+        <label class="title">How is your job seeking experience?</label>
+        <label><input type="radio" name="radio-group" value="vsmooth" required> Very Smooth</label>
+        <label><input type="radio" name="radio-group" value="smooth"> Smooth</label>
+        <label><input type="radio" name="radio-group" value="tough"> Tough</label>
+        <label><input type="radio" name="radio-group" value="vtough"> Very Tough</label>
+        
+        <label class="title">What topics interest you?</label>
+        <label><input type="checkbox" name="checkbox-group" value="fend"> Front-end</label>
+        <label><input type="checkbox" name="checkbox-group" value="bend"> Back-end</label>
+        <label><input type="checkbox" name="checkbox-group" value="mlearn"> Machine Learning</label>
+        <label><input type="checkbox" name="checkbox-group" value="ai"> AI</label>
+        <label><input type="checkbox" name="checkbox-group" value="security"> Computer Security</label>
+        <label><input type="checkbox" name="checkbox-group" value="vision"> Computer Vision</label>
+
+        
+        <label class="title" for="comments">Additional comments or suggestions:</label>
+        <textarea id="comments" placeholder="Enter your comments here"></textarea>
+        
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
