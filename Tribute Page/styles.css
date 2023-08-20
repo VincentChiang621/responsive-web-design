@@ -1,0 +1,49 @@
+main {
+    text-align: center;
+    background-color: antiquewhite;
+    font-family:'Times New Roman', Times, serif
+}
+
+h1 {
+    padding-top: 30px;
+}
+
+#subtitle {
+    font-style: italic;
+}
+
+#img-div {
+    background-color: white;
+    width: 90%;
+    margin: 25px auto;
+    border-radius: 5%;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+#tribute-info {
+    width: 80%;
+    margin: auto;
+}
+
+ul li {
+    display: flex;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+ul a {
+    font-weight: bold;
+    margin-right: 10px
+}
+
+footer {
+    margin-top: 45px;
+    height: 40px;
+
+}
